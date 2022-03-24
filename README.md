@@ -1,12 +1,12 @@
 # Install
 ```
-git clone 
+git clone git@github.com:normanwongcl/learning-powershell.git
 ```
 
 # Run script in the background
 ```ps1
 # Keep the script running in the background, don't throw away script when it is done executing
-. ./script.ps1
+. .\NormanWong-nich19032@outlook.com.ps1
 ```
 
 # Usage

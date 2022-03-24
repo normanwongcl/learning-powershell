@@ -1,9 +1,6 @@
-#requires -version 5
-
 <#
 .SYNOPSIS
   Script to list folders in a directory and compare the file size of 2 file. 
-
 #>
 
 # List all the folders in a directory
@@ -40,7 +37,7 @@ function compareTwoFiles {
         # Storing the commands in variables to make the code more readable
         $firstFile = Get-Item -Path $firstFilePath -ErrorAction Stop
         $secondFile = Get-Item -Path $secondFilePath -ErrorAction Stop
-        
+
         # Compare the file size of firstFilePath and secondFilePath
         if (($firstFile).Length -eq ($secondFile).Length) {
             return "File size is the same"
